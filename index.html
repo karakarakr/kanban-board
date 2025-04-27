@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kandban board</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script src="scripts/drag.js" defer></script>
+    <script src="scripts/todo.js" defer></script>
+</head>
+<body>
+    <div class="board">
+        <form id="todo-form">
+            <input 
+                type="text" 
+                placeholder="Write a new task" 
+                id="todo-input"
+            />
+            <button type="submit">Add +</button>
+        </form>
+
+        <div class="lanes">
+            <div class="swim-lane" id="todo-lane">
+                <h3 class="heading">TODO</h3>
+
+                <p class="task" draggable="true">Buy a coffee</p>
+                <p class="task" draggable="true">Cook some food</p>
+                <p class="task" draggable="true">Learn C++</p>
+            </div>
+
+            <div class="swim-lane" id="todo-lane">
+                <h3 class="heading">In proccess</h3>
+
+                <p class="task" draggable="true">
+                    Watch some tutorials
+                </p>
+            </div>
+
+            <div class="swim-lane" id="todo-lane">
+                <h3 class="heading">Done</h3>
+
+                <p class="task" draggable="true">
+                    Create a blackhole
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
